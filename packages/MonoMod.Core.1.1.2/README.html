@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | Lunaris </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | Lunaris ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Lunaris">
+            Lunaris
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h3 id="this-is-probably-not-the-library-you-want-to-be-using-you-probably-want-runtimedetour-instead"><strong>THIS IS PROBABLY NOT THE LIBRARY YOU WANT TO BE USING.</strong> You probably want <code>RuntimeDetour</code> instead.</h3>
+<hr>
+<h2 id="notable-apis">Notable APIs</h2>
+<ul>
+<li><code>MonoMod.Core.DetourFactory.Current</code></li>
+<li><code>MonoMod.Core.ICoreDetour</code></li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>Use <code>DetourFactory.Current.CreateDetour</code> to create a single detour from one method to another. The detour will be
+automatically undone when the returnedc object is disposed or garbage collected. Only one such detour may be made per
+method. If multiple are made, they will not be cleaned up properly. <code>MonoMod.Core</code> does not track which methods have
+already been detoured, and will not throw.</p>
+<p>It is therefore <strong>highly recommended</strong> to use a higher-level detouring API (like that provided by
+<code>MonoMod.RuntimeDetour</code> or <code>Harmony</code>) to perform detours. Those higher level APIs also provide solutions to many of
+the limitations to <code>Core</code>'s detour abstraction, such as the ability to call the original, unmodified method, or
+modify the IL of the method. (See their documentation for how this is actually done.)</p>
+<p>Additionally, interfaces in this package may have members added across minor version updates. Other version-based
+compatability guarantees are retained.</p>
+<h2 id="other-potentially-useful-apis">Other potentially useful APIs</h2>
+<p>The default <code>IDetourFactory</code> utilizes <code>MonoMod.Core.Platforms.PlatformTriple.Current</code> to implement detours. Notably,
+that factory handles re-creating the underlying <code>ISimpleNativeDetour</code> objects when methods are recompiled by the
+runtime.</p>
+<p><code>PlatformTriple</code> does provide a few other utilities which may be useful for a higher-level library, however:</p>
+<ul>
+<li><code>PlatformTriple.Prepare</code> JIT compiles a method, sully supporting generic instantiations</li>
+<li><code>PlatformTriple.GetIdentifiable</code> translates the provided <code>MethodBase</code> into an instance which can be used as, for
+instance, the key to a <code>ConditionalWeakTable</code></li>
+</ul>
+<p>The other methods of <code>PlatformTriple</code> are means of implementing the detour factory, and likely should not be touched.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

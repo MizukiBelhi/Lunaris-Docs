@@ -1,0 +1,1006 @@
+{
+  "source_base_path": "H:/trt/C+Proj/Lunaris",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Build/Release/Docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "Build/Release/Docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Build/Release/Docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Build/Release/Docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Build/Release/Docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Build/Release/Docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "Build/Release/Docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.ConfigAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.ConfigAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.ConfigAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.ConfigAttribute.yml\" sourcestartlinenumber=\"1\">Combines other Attributes for ease of use.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.ConfigHiddenAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.ConfigHiddenAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.ConfigHiddenAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.ConfigHiddenAttribute.yml\" sourcestartlinenumber=\"1\">Marks a property as hidden in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.ConfigLabelAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.ConfigLabelAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.ConfigLabelAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.ConfigLabelAttribute.yml\" sourcestartlinenumber=\"1\">Display string shown in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.ConfigRangeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.ConfigRangeAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.ConfigRangeAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.ConfigRangeAttribute.yml\" sourcestartlinenumber=\"1\">Clamps a numeric property to [Min, Max].</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.ConfigSectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.ConfigSectionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.ConfigSectionAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.ConfigSectionAttribute.yml\" sourcestartlinenumber=\"1\">Groups properties in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.ConfigTooltipAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.ConfigTooltipAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.ConfigTooltipAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.ConfigTooltipAttribute.yml\" sourcestartlinenumber=\"1\">Tooltip shown on hover in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.IConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.IConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.IConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.IConfigHandle-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.IConfigHandle-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.IConfigHandle<T>",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.IConfigHandle-1.yml\" sourcestartlinenumber=\"1\">Handle returned by <xref href=\"Lunaris.Config.IConfig.Register%60%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.IKeybind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.IKeybind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.IKeybind",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.IKeybind.yml\" sourcestartlinenumber=\"1\">Config keybind entry.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.KeybindAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.KeybindAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.KeybindAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ConfigHiddenAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ConfigHiddenAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ConfigHiddenAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.ConfigHiddenAttribute.yml\" sourcestartlinenumber=\"1\">Marks a property as hidden in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ConfigLabelAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ConfigLabelAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ConfigLabelAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.ConfigLabelAttribute.yml\" sourcestartlinenumber=\"1\">Display string shown in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ConfigRangeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ConfigRangeAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ConfigRangeAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.ConfigRangeAttribute.yml\" sourcestartlinenumber=\"1\">Clamps a numeric property to [Min, Max].</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ConfigSectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ConfigSectionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ConfigSectionAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.ConfigSectionAttribute.yml\" sourcestartlinenumber=\"1\">Groups properties in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ConfigTooltipAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ConfigTooltipAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ConfigTooltipAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.ConfigTooltipAttribute.yml\" sourcestartlinenumber=\"1\">Tooltip shown on hover in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.FontAwesomeIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.FontAwesomeIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.FontAwesomeIcon",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IConfigHandle-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IConfigHandle-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IConfigHandle<T>",
+      "Summary": "<p sourcefile=\"api/Lunaris.IConfigHandle-1.yml\" sourcestartlinenumber=\"1\">Handle returned by <xref href=\"Lunaris.IConfig.Register%60%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IFont.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IFont.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IFont",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IGUI.FontAwesomeIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IGUI.FontAwesomeIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IGUI.FontAwesomeIcon",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IGUI.IFont.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IGUI.IFont.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IGUI.IFont",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IGUI.ImGuiEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IGUI.ImGuiEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IGUI.ImGuiEx",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IGUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IGUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IGUI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IKeybind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IKeybind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IKeybind",
+      "Summary": "<p sourcefile=\"api/Lunaris.IKeybind.yml\" sourcestartlinenumber=\"1\">Config keybind entry.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ILog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ILog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ILog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, T2, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, T2, T3, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, T2, T3, T4, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, T2, T3, T4, T5, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-7.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, T2, T3, T4, T5, T6, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-8.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, T2, T3, T4, T5, T6, T7, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider-9.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider<T1, T2, T3, T4, T5, T6, T7, T8, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, T2, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, T2, T3, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, T2, T3, T4, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, T2, T3, T4, T5, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-7.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, T2, T3, T4, T5, T6, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-8.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, T2, T3, T4, T5, T6, T7, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber-9.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber<T1, T2, T3, T4, T5, T6, T7, T8, TRet>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.IAuraSubscriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.IAuraSubscriber.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.IAuraSubscriber",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.Internal.AuraBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.Internal.AuraBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.Internal.AuraBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.Internal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC.Internal",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.IPC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.IPC.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.IPC",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ImGuiChildFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ImGuiChildFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ImGuiChildFlags",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.ImGuiEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.ImGuiEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.ImGuiEx",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.LunarisCommandAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.LunarisCommandAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.LunarisCommandAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.LunarisCommandAttribute.yml\" sourcestartlinenumber=\"1\">Marks a method as a Command, automatically registering it with the command system\nand making it visible in the plugin installer.\nAll registered plugin commands can also be seen by typing <code>/lunaris help</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.LunarisPermission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.LunarisPermission.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.LunarisPermission",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.LunarisPermissionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.LunarisPermissionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.LunarisPermissionAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.LunarisPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.LunarisPlugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.LunarisPlugin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.LunarisPluginAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.LunarisPluginAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.LunarisPluginAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.MathF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.MathF.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.MathF",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Message.FloatExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Message.FloatExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Message.FloatExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Message.INotifications.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Message.INotifications.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Message.INotifications",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Message.NotificationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Message.NotificationType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Message.NotificationType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Message.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Message",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/MonoMod.Backports.1.1.2/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/MonoMod.Backports.1.1.2/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/MonoMod.Core.1.1.2/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/MonoMod.Core.1.1.2/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/MonoMod.ILHelpers.1.1.0/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/MonoMod.ILHelpers.1.1.0/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/MonoMod.RuntimeDetour.25.1.2/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/MonoMod.RuntimeDetour.25.1.2/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "packages/MonoMod.Utils.25.0.6/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "packages/MonoMod.Utils.25.0.6/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
