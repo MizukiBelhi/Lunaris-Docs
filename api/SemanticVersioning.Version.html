@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Version | Lunaris </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Version | Lunaris ">
+      
+      <meta name="description" content="A semantic version.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Lunaris">
+            Lunaris
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SemanticVersioning.Version">
+
+
+
+  <h1 id="SemanticVersioning_Version" data-uid="SemanticVersioning.Version" class="text-break">
+Class Version  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SemanticVersioning.html">SemanticVersioning</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Lunaris.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A semantic version.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Version : IComparable&lt;Version&gt;, IComparable, IEquatable&lt;Version&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Version</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="SemanticVersioning.Version.html">Version</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="SemanticVersioning.Version.html">Version</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SemanticVersioning_Version__ctor_" data-uid="SemanticVersioning.Version.#ctor*"></a>
+
+  <h3 id="SemanticVersioning_Version__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_" data-uid="SemanticVersioning.Version.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+  Version(int, int, int, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a new semantic version from version components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Version(int major, int minor, int patch, string preRelease = null, string build = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>major</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The major component of the version.</p>
+</dd>
+    <dt><code>minor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minor component of the version.</p>
+</dd>
+    <dt><code>patch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The patch component of the version.</p>
+</dd>
+    <dt><code>preRelease</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The pre-release version string, or null for no pre-release version.</p>
+</dd>
+    <dt><code>build</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The build version string, or null for no build version.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version__ctor_" data-uid="SemanticVersioning.Version.#ctor*"></a>
+
+  <h3 id="SemanticVersioning_Version__ctor_System_String_System_Boolean_" data-uid="SemanticVersioning.Version.#ctor(System.String,System.Boolean)">
+  Version(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a new semantic version from a version string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Version(string input, bool loose = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The version string.</p>
+</dd>
+    <dt><code>loose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true, be more forgiving of some invalid version specifications.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when the version string is invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SemanticVersioning_Version_Build_" data-uid="SemanticVersioning.Version.Build*"></a>
+
+  <h3 id="SemanticVersioning_Version_Build" data-uid="SemanticVersioning.Version.Build">
+  Build
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The build string, or null for no build version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Build { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_IsPreRelease_" data-uid="SemanticVersioning.Version.IsPreRelease*"></a>
+
+  <h3 id="SemanticVersioning_Version_IsPreRelease" data-uid="SemanticVersioning.Version.IsPreRelease">
+  IsPreRelease
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this version is a pre-release</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPreRelease { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_Major_" data-uid="SemanticVersioning.Version.Major*"></a>
+
+  <h3 id="SemanticVersioning_Version_Major" data-uid="SemanticVersioning.Version.Major">
+  Major
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The major component of the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Major { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_Minor_" data-uid="SemanticVersioning.Version.Minor*"></a>
+
+  <h3 id="SemanticVersioning_Version_Minor" data-uid="SemanticVersioning.Version.Minor">
+  Minor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The minor component of the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Minor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_Patch_" data-uid="SemanticVersioning.Version.Patch*"></a>
+
+  <h3 id="SemanticVersioning_Version_Patch" data-uid="SemanticVersioning.Version.Patch">
+  Patch
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The patch component of the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Patch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_PreRelease_" data-uid="SemanticVersioning.Version.PreRelease*"></a>
+
+  <h3 id="SemanticVersioning_Version_PreRelease" data-uid="SemanticVersioning.Version.PreRelease">
+  PreRelease
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The pre-release string, or null for no pre-release version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreRelease { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SemanticVersioning_Version_BaseVersion_" data-uid="SemanticVersioning.Version.BaseVersion*"></a>
+
+  <h3 id="SemanticVersioning_Version_BaseVersion" data-uid="SemanticVersioning.Version.BaseVersion">
+  BaseVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns this version without any pre-release or build version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Version BaseVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd><p>The base version</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_Clean_" data-uid="SemanticVersioning.Version.Clean*"></a>
+
+  <h3 id="SemanticVersioning_Version_Clean" data-uid="SemanticVersioning.Version.Clean">
+  Clean()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return a cleaned, normalised version string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Clean()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The cleaned version string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_CompareTo_" data-uid="SemanticVersioning.Version.CompareTo*"></a>
+
+  <h3 id="SemanticVersioning_Version_CompareTo_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.CompareTo(SemanticVersioning.Version)">
+  CompareTo(Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Version other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd><p>An object to compare with this instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value that indicates the relative order of the objects being compared. The return value has these meanings:<br>
+Value</p>
+<p>Meaning</p>
+<p>Less than zero</p>
+<p>This instance precedes <code class="paramref">other</code> in the sort order.</p>
+<p>Zero</p>
+<p>This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</p>
+<p>Greater than zero</p>
+<p>This instance follows <code class="paramref">other</code> in the sort order.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_CompareTo_" data-uid="SemanticVersioning.Version.CompareTo*"></a>
+
+  <h3 id="SemanticVersioning_Version_CompareTo_System_Object_" data-uid="SemanticVersioning.Version.CompareTo(System.Object)">
+  CompareTo(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>An object to compare with this instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value that indicates the relative order of the objects being compared. The return value has these meanings:<br>
+Value</p>
+<p>Meaning</p>
+<p>Less than zero</p>
+<p>This instance precedes <code class="paramref">obj</code> in the sort order.</p>
+<p>Zero</p>
+<p>This instance occurs in the same position in the sort order as <code class="paramref">obj</code>.</p>
+<p>Greater than zero</p>
+<p>This instance follows <code class="paramref">obj</code> in the sort order.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">obj</code> is not the same type as this instance.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SemanticVersioning_Version_Equals_" data-uid="SemanticVersioning.Version.Equals*"></a>
+
+  <h3 id="SemanticVersioning_Version_Equals_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.Equals(SemanticVersioning.Version)">
+  Equals(Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Test whether two versions are semantically equivalent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Version other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_Equals_" data-uid="SemanticVersioning.Version.Equals*"></a>
+
+  <h3 id="SemanticVersioning_Version_Equals_System_Object_" data-uid="SemanticVersioning.Version.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_GetHashCode_" data-uid="SemanticVersioning.Version.GetHashCode*"></a>
+
+  <h3 id="SemanticVersioning_Version_GetHashCode" data-uid="SemanticVersioning.Version.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate a hash code for the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_Parse_" data-uid="SemanticVersioning.Version.Parse*"></a>
+
+  <h3 id="SemanticVersioning_Version_Parse_System_String_System_Boolean_" data-uid="SemanticVersioning.Version.Parse(System.String,System.Boolean)">
+  Parse(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a new semantic version from a version string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Version Parse(string input, bool loose = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The version string.</p>
+</dd>
+    <dt><code>loose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true, be more forgiving of some invalid version specifications.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd><p>The Version</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when the version string is invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SemanticVersioning_Version_ToString_" data-uid="SemanticVersioning.Version.ToString*"></a>
+
+  <h3 id="SemanticVersioning_Version_ToString" data-uid="SemanticVersioning.Version.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the original input string the version was constructed from or
+the cleaned version if the version was constructed from version components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The version string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_TryParse_" data-uid="SemanticVersioning.Version.TryParse*"></a>
+
+  <h3 id="SemanticVersioning_Version_TryParse_System_String_SemanticVersioning_Version__" data-uid="SemanticVersioning.Version.TryParse(System.String,SemanticVersioning.Version@)">
+  TryParse(string, out Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Try to construct a new semantic version from a version string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string input, out Version result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The version string.</p>
+</dd>
+    <dt><code>result</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd><p>The Version, or null when parse fails.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A boolean indicating success of the parse operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_TryParse_" data-uid="SemanticVersioning.Version.TryParse*"></a>
+
+  <h3 id="SemanticVersioning_Version_TryParse_System_String_System_Boolean_SemanticVersioning_Version__" data-uid="SemanticVersioning.Version.TryParse(System.String,System.Boolean,SemanticVersioning.Version@)">
+  TryParse(string, bool, out Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Try to construct a new semantic version from a version string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string input, bool loose, out Version result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The version string.</p>
+</dd>
+    <dt><code>loose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true, be more forgiving of some invalid version specifications.</p>
+</dd>
+    <dt><code>result</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd><p>The Version, or null when parse fails.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A boolean indicating success of the parse operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="SemanticVersioning_Version_op_Equality_" data-uid="SemanticVersioning.Version.op_Equality*"></a>
+
+  <h3 id="SemanticVersioning_Version_op_Equality_SemanticVersioning_Version_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.op_Equality(SemanticVersioning.Version,SemanticVersioning.Version)">
+  operator ==(Version, Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Version a, Version b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_op_GreaterThan_" data-uid="SemanticVersioning.Version.op_GreaterThan*"></a>
+
+  <h3 id="SemanticVersioning_Version_op_GreaterThan_SemanticVersioning_Version_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.op_GreaterThan(SemanticVersioning.Version,SemanticVersioning.Version)">
+  operator &gt;(Version, Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Version a, Version b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_op_GreaterThanOrEqual_" data-uid="SemanticVersioning.Version.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="SemanticVersioning_Version_op_GreaterThanOrEqual_SemanticVersioning_Version_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.op_GreaterThanOrEqual(SemanticVersioning.Version,SemanticVersioning.Version)">
+  operator &gt;=(Version, Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Version a, Version b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_op_Inequality_" data-uid="SemanticVersioning.Version.op_Inequality*"></a>
+
+  <h3 id="SemanticVersioning_Version_op_Inequality_SemanticVersioning_Version_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.op_Inequality(SemanticVersioning.Version,SemanticVersioning.Version)">
+  operator !=(Version, Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Version a, Version b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_op_LessThan_" data-uid="SemanticVersioning.Version.op_LessThan*"></a>
+
+  <h3 id="SemanticVersioning_Version_op_LessThan_SemanticVersioning_Version_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.op_LessThan(SemanticVersioning.Version,SemanticVersioning.Version)">
+  operator &lt;(Version, Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Version a, Version b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SemanticVersioning_Version_op_LessThanOrEqual_" data-uid="SemanticVersioning.Version.op_LessThanOrEqual*"></a>
+
+  <h3 id="SemanticVersioning_Version_op_LessThanOrEqual_SemanticVersioning_Version_SemanticVersioning_Version_" data-uid="SemanticVersioning.Version.op_LessThanOrEqual(SemanticVersioning.Version,SemanticVersioning.Version)">
+  operator &lt;=(Version, Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Version a, Version b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="SemanticVersioning.Version.html">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

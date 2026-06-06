@@ -323,8 +323,8 @@ Class ImGuiEx
 
   <a id="Lunaris_IGUI_ImGuiEx_RegisterFont_" data-uid="Lunaris.IGUI.ImGuiEx.RegisterFont*"></a>
 
-  <h3 id="Lunaris_IGUI_ImGuiEx_RegisterFont_System_String_System_Single_" data-uid="Lunaris.IGUI.ImGuiEx.RegisterFont(System.String,System.Single)">
-  RegisterFont(string, float)
+  <h3 id="Lunaris_IGUI_ImGuiEx_RegisterFont_System_String_System_Single_System_Boolean_" data-uid="Lunaris.IGUI.ImGuiEx.RegisterFont(System.String,System.Single,System.Boolean)">
+  RegisterFont(string, float, bool)
   
   </h3>
 
@@ -333,7 +333,7 @@ Class ImGuiEx
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IFont RegisterFont(string path, float fontSize)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IFont RegisterFont(string path, float fontSize, bool isEmbedded = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -343,6 +343,9 @@ Class ImGuiEx
 </dd>
     <dt><code>fontSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd><p>Font size in pixels.</p>
+</dd>
+    <dt><code>isEmbedded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to true if the font is embedded.</p>
 </dd>
   </dl>
 
@@ -358,7 +361,7 @@ Class ImGuiEx
 
 
 
-  <h4 class="section" id="Lunaris_IGUI_ImGuiEx_RegisterFont_System_String_System_Single__remarks">Remarks</h4>
+  <h4 class="section" id="Lunaris_IGUI_ImGuiEx_RegisterFont_System_String_System_Single_System_Boolean__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><div class="WARNING">
 <h5>Warning</h5>
 <p>Please only use once for each font during Awake()</p>

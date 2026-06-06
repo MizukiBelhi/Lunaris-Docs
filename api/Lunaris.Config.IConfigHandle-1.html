@@ -203,6 +203,50 @@ Interface IConfigHandle&lt;T&gt;
 
 
 
+  <a id="Lunaris_Config_IConfigHandle_1_OnChanged_" data-uid="Lunaris.Config.IConfigHandle`1.OnChanged*"></a>
+
+  <h3 id="Lunaris_Config_IConfigHandle_1_OnChanged__1___0_System_Action___0__System_String_" data-uid="Lunaris.Config.IConfigHandle`1.OnChanged``1(``0,System.Action{``0},System.String)">
+  OnChanged&lt;TProp&gt;(TProp, Action&lt;TProp&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subscribe to get notified of changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnChanged&lt;TProp&gt;(TProp selector, Action&lt;TProp&gt; callback, string expr = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <span class="xref">TProp</span></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TProp&gt;</dt>
+    <dd></dd>
+    <dt><code>expr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TProp</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Lunaris_Config_IConfigHandle_1_OnChanged__1___0_System_Action___0__System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">config.OnChanged(config.Get().Val, val =&gt; { });</code></pre>
+
+
+
+
+
+
   <h2 class="section" id="events">Events
 </h2>
 

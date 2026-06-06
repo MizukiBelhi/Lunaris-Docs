@@ -77,6 +77,44 @@ references:
   isSpec: "True"
   fullName: Lunaris.Config.ConfigAttribute.Tooltip
   nameWithType: ConfigAttribute.Tooltip
+- uid: Lunaris.Config.ConfigDescriptionAttribute
+  name: ConfigDescriptionAttribute
+  href: api/Lunaris.Config.ConfigDescriptionAttribute.html
+  commentId: T:Lunaris.Config.ConfigDescriptionAttribute
+  fullName: Lunaris.Config.ConfigDescriptionAttribute
+  nameWithType: ConfigDescriptionAttribute
+- uid: Lunaris.Config.ConfigDescriptionAttribute.#ctor(System.String)
+  name: ConfigDescriptionAttribute(string)
+  href: api/Lunaris.Config.ConfigDescriptionAttribute.html#Lunaris_Config_ConfigDescriptionAttribute__ctor_System_String_
+  commentId: M:Lunaris.Config.ConfigDescriptionAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Lunaris.Config.ConfigDescriptionAttribute.ConfigDescriptionAttribute(string)
+  fullName.vb: Lunaris.Config.ConfigDescriptionAttribute.New(String)
+  nameWithType: ConfigDescriptionAttribute.ConfigDescriptionAttribute(string)
+  nameWithType.vb: ConfigDescriptionAttribute.New(String)
+- uid: Lunaris.Config.ConfigDescriptionAttribute.#ctor*
+  name: ConfigDescriptionAttribute
+  href: api/Lunaris.Config.ConfigDescriptionAttribute.html#Lunaris_Config_ConfigDescriptionAttribute__ctor_
+  commentId: Overload:Lunaris.Config.ConfigDescriptionAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Lunaris.Config.ConfigDescriptionAttribute.ConfigDescriptionAttribute
+  fullName.vb: Lunaris.Config.ConfigDescriptionAttribute.New
+  nameWithType: ConfigDescriptionAttribute.ConfigDescriptionAttribute
+  nameWithType.vb: ConfigDescriptionAttribute.New
+- uid: Lunaris.Config.ConfigDescriptionAttribute.Description
+  name: Description
+  href: api/Lunaris.Config.ConfigDescriptionAttribute.html#Lunaris_Config_ConfigDescriptionAttribute_Description
+  commentId: P:Lunaris.Config.ConfigDescriptionAttribute.Description
+  fullName: Lunaris.Config.ConfigDescriptionAttribute.Description
+  nameWithType: ConfigDescriptionAttribute.Description
+- uid: Lunaris.Config.ConfigDescriptionAttribute.Description*
+  name: Description
+  href: api/Lunaris.Config.ConfigDescriptionAttribute.html#Lunaris_Config_ConfigDescriptionAttribute_Description_
+  commentId: Overload:Lunaris.Config.ConfigDescriptionAttribute.Description
+  isSpec: "True"
+  fullName: Lunaris.Config.ConfigDescriptionAttribute.Description
+  nameWithType: ConfigDescriptionAttribute.Description
 - uid: Lunaris.Config.ConfigHiddenAttribute
   name: ConfigHiddenAttribute
   href: api/Lunaris.Config.ConfigHiddenAttribute.html
@@ -328,6 +366,15 @@ references:
   fullName.vb: Lunaris.Config.IConfig.Register(Of T)()
   nameWithType: IConfig.Register<T>()
   nameWithType.vb: IConfig.Register(Of T)()
+- uid: Lunaris.Config.IConfig.Register``1(``0@)
+  name: Register<T>(ref T)
+  href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__
+  commentId: M:Lunaris.Config.IConfig.Register``1(``0@)
+  name.vb: Register(Of T)(T)
+  fullName: Lunaris.Config.IConfig.Register<T>(ref T)
+  fullName.vb: Lunaris.Config.IConfig.Register(Of T)(T)
+  nameWithType: IConfig.Register<T>(ref T)
+  nameWithType.vb: IConfig.Register(Of T)(T)
 - uid: Lunaris.Config.IConfig.Reset
   name: Reset()
   href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Reset
@@ -367,6 +414,54 @@ references:
   isSpec: "True"
   fullName: Lunaris.Config.IConfig.SaveAsJson
   nameWithType: IConfig.SaveAsJson
+- uid: Lunaris.Config.IConfig.SetDesc(System.String,System.String)
+  name: SetDesc(string, string)
+  href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_SetDesc_System_String_System_String_
+  commentId: M:Lunaris.Config.IConfig.SetDesc(System.String,System.String)
+  name.vb: SetDesc(String, String)
+  fullName: Lunaris.Config.IConfig.SetDesc(string, string)
+  fullName.vb: Lunaris.Config.IConfig.SetDesc(String, String)
+  nameWithType: IConfig.SetDesc(string, string)
+  nameWithType.vb: IConfig.SetDesc(String, String)
+- uid: Lunaris.Config.IConfig.SetDesc*
+  name: SetDesc
+  href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_SetDesc_
+  commentId: Overload:Lunaris.Config.IConfig.SetDesc
+  isSpec: "True"
+  fullName: Lunaris.Config.IConfig.SetDesc
+  nameWithType: IConfig.SetDesc
+- uid: Lunaris.Config.IConfig.SetRange(System.String,System.Single,System.Single)
+  name: SetRange(string, float, float)
+  href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_SetRange_System_String_System_Single_System_Single_
+  commentId: M:Lunaris.Config.IConfig.SetRange(System.String,System.Single,System.Single)
+  name.vb: SetRange(String, Single, Single)
+  fullName: Lunaris.Config.IConfig.SetRange(string, float, float)
+  fullName.vb: Lunaris.Config.IConfig.SetRange(String, Single, Single)
+  nameWithType: IConfig.SetRange(string, float, float)
+  nameWithType.vb: IConfig.SetRange(String, Single, Single)
+- uid: Lunaris.Config.IConfig.SetRange*
+  name: SetRange
+  href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_SetRange_
+  commentId: Overload:Lunaris.Config.IConfig.SetRange
+  isSpec: "True"
+  fullName: Lunaris.Config.IConfig.SetRange
+  nameWithType: IConfig.SetRange
+- uid: Lunaris.Config.IConfig.SetSection(System.String,System.String)
+  name: SetSection(string, string)
+  href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_SetSection_System_String_System_String_
+  commentId: M:Lunaris.Config.IConfig.SetSection(System.String,System.String)
+  name.vb: SetSection(String, String)
+  fullName: Lunaris.Config.IConfig.SetSection(string, string)
+  fullName.vb: Lunaris.Config.IConfig.SetSection(String, String)
+  nameWithType: IConfig.SetSection(string, string)
+  nameWithType.vb: IConfig.SetSection(String, String)
+- uid: Lunaris.Config.IConfig.SetSection*
+  name: SetSection
+  href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_SetSection_
+  commentId: Overload:Lunaris.Config.IConfig.SetSection
+  isSpec: "True"
+  fullName: Lunaris.Config.IConfig.SetSection
+  nameWithType: IConfig.SetSection
 - uid: Lunaris.Config.IConfig.Write*
   name: Write
   href: api/Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Write_
@@ -435,6 +530,15 @@ references:
   fullName.vb: Lunaris.Config.IConfigHandle(Of T).OnChanged(Of TProp)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProp)), System.Action(Of TProp))
   nameWithType: IConfigHandle<T>.OnChanged<TProp>(Expression<Func<T, TProp>>, Action<TProp>)
   nameWithType.vb: IConfigHandle(Of T).OnChanged(Of TProp)(Expression(Of Func(Of T, TProp)), Action(Of TProp))
+- uid: Lunaris.Config.IConfigHandle`1.OnChanged``1(``0,System.Action{``0},System.String)
+  name: OnChanged<TProp>(TProp, Action<TProp>, string)
+  href: api/Lunaris.Config.IConfigHandle-1.html#Lunaris_Config_IConfigHandle_1_OnChanged__1___0_System_Action___0__System_String_
+  commentId: M:Lunaris.Config.IConfigHandle`1.OnChanged``1(``0,System.Action{``0},System.String)
+  name.vb: OnChanged(Of TProp)(TProp, Action(Of TProp), String)
+  fullName: Lunaris.Config.IConfigHandle<T>.OnChanged<TProp>(TProp, System.Action<TProp>, string)
+  fullName.vb: Lunaris.Config.IConfigHandle(Of T).OnChanged(Of TProp)(TProp, System.Action(Of TProp), String)
+  nameWithType: IConfigHandle<T>.OnChanged<TProp>(TProp, Action<TProp>, string)
+  nameWithType.vb: IConfigHandle(Of T).OnChanged(Of TProp)(TProp, Action(Of TProp), String)
 - uid: Lunaris.Config.IKeybind
   name: IKeybind
   href: api/Lunaris.Config.IKeybind.html
@@ -24045,15 +24149,15 @@ references:
   fullName.vb: Lunaris.IGUI.ImGuiEx.RegisterFont(Byte(), Single)
   nameWithType: ImGuiEx.RegisterFont(byte[], float)
   nameWithType.vb: ImGuiEx.RegisterFont(Byte(), Single)
-- uid: Lunaris.IGUI.ImGuiEx.RegisterFont(System.String,System.Single)
-  name: RegisterFont(string, float)
-  href: api/Lunaris.IGUI.ImGuiEx.html#Lunaris_IGUI_ImGuiEx_RegisterFont_System_String_System_Single_
-  commentId: M:Lunaris.IGUI.ImGuiEx.RegisterFont(System.String,System.Single)
-  name.vb: RegisterFont(String, Single)
-  fullName: Lunaris.IGUI.ImGuiEx.RegisterFont(string, float)
-  fullName.vb: Lunaris.IGUI.ImGuiEx.RegisterFont(String, Single)
-  nameWithType: ImGuiEx.RegisterFont(string, float)
-  nameWithType.vb: ImGuiEx.RegisterFont(String, Single)
+- uid: Lunaris.IGUI.ImGuiEx.RegisterFont(System.String,System.Single,System.Boolean)
+  name: RegisterFont(string, float, bool)
+  href: api/Lunaris.IGUI.ImGuiEx.html#Lunaris_IGUI_ImGuiEx_RegisterFont_System_String_System_Single_System_Boolean_
+  commentId: M:Lunaris.IGUI.ImGuiEx.RegisterFont(System.String,System.Single,System.Boolean)
+  name.vb: RegisterFont(String, Single, Boolean)
+  fullName: Lunaris.IGUI.ImGuiEx.RegisterFont(string, float, bool)
+  fullName.vb: Lunaris.IGUI.ImGuiEx.RegisterFont(String, Single, Boolean)
+  nameWithType: ImGuiEx.RegisterFont(string, float, bool)
+  nameWithType.vb: ImGuiEx.RegisterFont(String, Single, Boolean)
 - uid: Lunaris.IGUI.ImGuiEx.RegisterFont*
   name: RegisterFont
   href: api/Lunaris.IGUI.ImGuiEx.html#Lunaris_IGUI_ImGuiEx_RegisterFont_
@@ -24294,15 +24398,6 @@ references:
   isSpec: "True"
   fullName: Lunaris.ILog.LogInfo
   nameWithType: ILog.LogInfo
-- uid: Lunaris.ILog.LogLocal(System.String,System.Boolean,System.String)
-  name: LogLocal(string, bool, string)
-  href: api/Lunaris.ILog.html#Lunaris_ILog_LogLocal_System_String_System_Boolean_System_String_
-  commentId: M:Lunaris.ILog.LogLocal(System.String,System.Boolean,System.String)
-  name.vb: LogLocal(String, Boolean, String)
-  fullName: Lunaris.ILog.LogLocal(string, bool, string)
-  fullName.vb: Lunaris.ILog.LogLocal(String, Boolean, String)
-  nameWithType: ILog.LogLocal(string, bool, string)
-  nameWithType.vb: ILog.LogLocal(String, Boolean, String)
 - uid: Lunaris.ILog.LogLocal(System.String,System.String)
   name: LogLocal(string, string)
   href: api/Lunaris.ILog.html#Lunaris_ILog_LogLocal_System_String_System_String_
@@ -24319,15 +24414,12 @@ references:
   isSpec: "True"
   fullName: Lunaris.ILog.LogLocal
   nameWithType: ILog.LogLocal
-- uid: Lunaris.ILog.LogSocial(System.String,System.Boolean,System.String)
-  name: LogSocial(string, bool, string)
-  href: api/Lunaris.ILog.html#Lunaris_ILog_LogSocial_System_String_System_Boolean_System_String_
-  commentId: M:Lunaris.ILog.LogSocial(System.String,System.Boolean,System.String)
-  name.vb: LogSocial(String, Boolean, String)
-  fullName: Lunaris.ILog.LogSocial(string, bool, string)
-  fullName.vb: Lunaris.ILog.LogSocial(String, Boolean, String)
-  nameWithType: ILog.LogSocial(string, bool, string)
-  nameWithType.vb: ILog.LogSocial(String, Boolean, String)
+- uid: Lunaris.ILog.LogSocial(ChatLogLine)
+  name: LogSocial(ChatLogLine)
+  href: api/Lunaris.ILog.html#Lunaris_ILog_LogSocial_ChatLogLine_
+  commentId: M:Lunaris.ILog.LogSocial(ChatLogLine)
+  fullName: Lunaris.ILog.LogSocial(ChatLogLine)
+  nameWithType: ILog.LogSocial(ChatLogLine)
 - uid: Lunaris.ILog.LogSocial(System.String,System.String)
   name: LogSocial(string, string)
   href: api/Lunaris.ILog.html#Lunaris_ILog_LogSocial_System_String_System_String_
@@ -27072,3 +27164,372 @@ references:
   commentId: F:Lunaris.Message.NotificationType.Warning
   fullName: Lunaris.Message.NotificationType.Warning
   nameWithType: NotificationType.Warning
+- uid: SemanticVersioning
+  name: SemanticVersioning
+  href: api/SemanticVersioning.html
+  commentId: N:SemanticVersioning
+  fullName: SemanticVersioning
+  nameWithType: SemanticVersioning
+- uid: SemanticVersioning.Version
+  name: Version
+  href: api/SemanticVersioning.Version.html
+  commentId: T:SemanticVersioning.Version
+  fullName: SemanticVersioning.Version
+  nameWithType: Version
+- uid: SemanticVersioning.Version.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
+  name: Version(int, int, int, string, string)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_
+  commentId: M:SemanticVersioning.Version.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
+  name.vb: New(Integer, Integer, Integer, String, String)
+  fullName: SemanticVersioning.Version.Version(int, int, int, string, string)
+  fullName.vb: SemanticVersioning.Version.New(Integer, Integer, Integer, String, String)
+  nameWithType: Version.Version(int, int, int, string, string)
+  nameWithType.vb: Version.New(Integer, Integer, Integer, String, String)
+- uid: SemanticVersioning.Version.#ctor(System.String,System.Boolean)
+  name: Version(string, bool)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version__ctor_System_String_System_Boolean_
+  commentId: M:SemanticVersioning.Version.#ctor(System.String,System.Boolean)
+  name.vb: New(String, Boolean)
+  fullName: SemanticVersioning.Version.Version(string, bool)
+  fullName.vb: SemanticVersioning.Version.New(String, Boolean)
+  nameWithType: Version.Version(string, bool)
+  nameWithType.vb: Version.New(String, Boolean)
+- uid: SemanticVersioning.Version.#ctor*
+  name: Version
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version__ctor_
+  commentId: Overload:SemanticVersioning.Version.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SemanticVersioning.Version.Version
+  fullName.vb: SemanticVersioning.Version.New
+  nameWithType: Version.Version
+  nameWithType.vb: Version.New
+- uid: SemanticVersioning.Version.BaseVersion
+  name: BaseVersion()
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_BaseVersion
+  commentId: M:SemanticVersioning.Version.BaseVersion
+  fullName: SemanticVersioning.Version.BaseVersion()
+  nameWithType: Version.BaseVersion()
+- uid: SemanticVersioning.Version.BaseVersion*
+  name: BaseVersion
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_BaseVersion_
+  commentId: Overload:SemanticVersioning.Version.BaseVersion
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.BaseVersion
+  nameWithType: Version.BaseVersion
+- uid: SemanticVersioning.Version.Build
+  name: Build
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Build
+  commentId: P:SemanticVersioning.Version.Build
+  fullName: SemanticVersioning.Version.Build
+  nameWithType: Version.Build
+- uid: SemanticVersioning.Version.Build*
+  name: Build
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Build_
+  commentId: Overload:SemanticVersioning.Version.Build
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.Build
+  nameWithType: Version.Build
+- uid: SemanticVersioning.Version.Clean
+  name: Clean()
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Clean
+  commentId: M:SemanticVersioning.Version.Clean
+  fullName: SemanticVersioning.Version.Clean()
+  nameWithType: Version.Clean()
+- uid: SemanticVersioning.Version.Clean*
+  name: Clean
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Clean_
+  commentId: Overload:SemanticVersioning.Version.Clean
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.Clean
+  nameWithType: Version.Clean
+- uid: SemanticVersioning.Version.CompareTo(SemanticVersioning.Version)
+  name: CompareTo(Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_CompareTo_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.CompareTo(SemanticVersioning.Version)
+  fullName: SemanticVersioning.Version.CompareTo(SemanticVersioning.Version)
+  nameWithType: Version.CompareTo(Version)
+- uid: SemanticVersioning.Version.CompareTo(System.Object)
+  name: CompareTo(object)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_CompareTo_System_Object_
+  commentId: M:SemanticVersioning.Version.CompareTo(System.Object)
+  name.vb: CompareTo(Object)
+  fullName: SemanticVersioning.Version.CompareTo(object)
+  fullName.vb: SemanticVersioning.Version.CompareTo(Object)
+  nameWithType: Version.CompareTo(object)
+  nameWithType.vb: Version.CompareTo(Object)
+- uid: SemanticVersioning.Version.CompareTo*
+  name: CompareTo
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_CompareTo_
+  commentId: Overload:SemanticVersioning.Version.CompareTo
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.CompareTo
+  nameWithType: Version.CompareTo
+- uid: SemanticVersioning.Version.Equals(SemanticVersioning.Version)
+  name: Equals(Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Equals_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.Equals(SemanticVersioning.Version)
+  fullName: SemanticVersioning.Version.Equals(SemanticVersioning.Version)
+  nameWithType: Version.Equals(Version)
+- uid: SemanticVersioning.Version.Equals(System.Object)
+  name: Equals(object)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Equals_System_Object_
+  commentId: M:SemanticVersioning.Version.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: SemanticVersioning.Version.Equals(object)
+  fullName.vb: SemanticVersioning.Version.Equals(Object)
+  nameWithType: Version.Equals(object)
+  nameWithType.vb: Version.Equals(Object)
+- uid: SemanticVersioning.Version.Equals*
+  name: Equals
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Equals_
+  commentId: Overload:SemanticVersioning.Version.Equals
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.Equals
+  nameWithType: Version.Equals
+- uid: SemanticVersioning.Version.GetHashCode
+  name: GetHashCode()
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_GetHashCode
+  commentId: M:SemanticVersioning.Version.GetHashCode
+  fullName: SemanticVersioning.Version.GetHashCode()
+  nameWithType: Version.GetHashCode()
+- uid: SemanticVersioning.Version.GetHashCode*
+  name: GetHashCode
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_GetHashCode_
+  commentId: Overload:SemanticVersioning.Version.GetHashCode
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.GetHashCode
+  nameWithType: Version.GetHashCode
+- uid: SemanticVersioning.Version.IsPreRelease
+  name: IsPreRelease
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_IsPreRelease
+  commentId: P:SemanticVersioning.Version.IsPreRelease
+  fullName: SemanticVersioning.Version.IsPreRelease
+  nameWithType: Version.IsPreRelease
+- uid: SemanticVersioning.Version.IsPreRelease*
+  name: IsPreRelease
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_IsPreRelease_
+  commentId: Overload:SemanticVersioning.Version.IsPreRelease
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.IsPreRelease
+  nameWithType: Version.IsPreRelease
+- uid: SemanticVersioning.Version.Major
+  name: Major
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Major
+  commentId: P:SemanticVersioning.Version.Major
+  fullName: SemanticVersioning.Version.Major
+  nameWithType: Version.Major
+- uid: SemanticVersioning.Version.Major*
+  name: Major
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Major_
+  commentId: Overload:SemanticVersioning.Version.Major
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.Major
+  nameWithType: Version.Major
+- uid: SemanticVersioning.Version.Minor
+  name: Minor
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Minor
+  commentId: P:SemanticVersioning.Version.Minor
+  fullName: SemanticVersioning.Version.Minor
+  nameWithType: Version.Minor
+- uid: SemanticVersioning.Version.Minor*
+  name: Minor
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Minor_
+  commentId: Overload:SemanticVersioning.Version.Minor
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.Minor
+  nameWithType: Version.Minor
+- uid: SemanticVersioning.Version.Parse(System.String,System.Boolean)
+  name: Parse(string, bool)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Parse_System_String_System_Boolean_
+  commentId: M:SemanticVersioning.Version.Parse(System.String,System.Boolean)
+  name.vb: Parse(String, Boolean)
+  fullName: SemanticVersioning.Version.Parse(string, bool)
+  fullName.vb: SemanticVersioning.Version.Parse(String, Boolean)
+  nameWithType: Version.Parse(string, bool)
+  nameWithType.vb: Version.Parse(String, Boolean)
+- uid: SemanticVersioning.Version.Parse*
+  name: Parse
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Parse_
+  commentId: Overload:SemanticVersioning.Version.Parse
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.Parse
+  nameWithType: Version.Parse
+- uid: SemanticVersioning.Version.Patch
+  name: Patch
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Patch
+  commentId: P:SemanticVersioning.Version.Patch
+  fullName: SemanticVersioning.Version.Patch
+  nameWithType: Version.Patch
+- uid: SemanticVersioning.Version.Patch*
+  name: Patch
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_Patch_
+  commentId: Overload:SemanticVersioning.Version.Patch
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.Patch
+  nameWithType: Version.Patch
+- uid: SemanticVersioning.Version.PreRelease
+  name: PreRelease
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_PreRelease
+  commentId: P:SemanticVersioning.Version.PreRelease
+  fullName: SemanticVersioning.Version.PreRelease
+  nameWithType: Version.PreRelease
+- uid: SemanticVersioning.Version.PreRelease*
+  name: PreRelease
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_PreRelease_
+  commentId: Overload:SemanticVersioning.Version.PreRelease
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.PreRelease
+  nameWithType: Version.PreRelease
+- uid: SemanticVersioning.Version.ToString
+  name: ToString()
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_ToString
+  commentId: M:SemanticVersioning.Version.ToString
+  fullName: SemanticVersioning.Version.ToString()
+  nameWithType: Version.ToString()
+- uid: SemanticVersioning.Version.ToString*
+  name: ToString
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_ToString_
+  commentId: Overload:SemanticVersioning.Version.ToString
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.ToString
+  nameWithType: Version.ToString
+- uid: SemanticVersioning.Version.TryParse(System.String,SemanticVersioning.Version@)
+  name: TryParse(string, out Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_TryParse_System_String_SemanticVersioning_Version__
+  commentId: M:SemanticVersioning.Version.TryParse(System.String,SemanticVersioning.Version@)
+  name.vb: TryParse(String, Version)
+  fullName: SemanticVersioning.Version.TryParse(string, out SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.TryParse(String, SemanticVersioning.Version)
+  nameWithType: Version.TryParse(string, out Version)
+  nameWithType.vb: Version.TryParse(String, Version)
+- uid: SemanticVersioning.Version.TryParse(System.String,System.Boolean,SemanticVersioning.Version@)
+  name: TryParse(string, bool, out Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_TryParse_System_String_System_Boolean_SemanticVersioning_Version__
+  commentId: M:SemanticVersioning.Version.TryParse(System.String,System.Boolean,SemanticVersioning.Version@)
+  name.vb: TryParse(String, Boolean, Version)
+  fullName: SemanticVersioning.Version.TryParse(string, bool, out SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.TryParse(String, Boolean, SemanticVersioning.Version)
+  nameWithType: Version.TryParse(string, bool, out Version)
+  nameWithType.vb: Version.TryParse(String, Boolean, Version)
+- uid: SemanticVersioning.Version.TryParse*
+  name: TryParse
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_TryParse_
+  commentId: Overload:SemanticVersioning.Version.TryParse
+  isSpec: "True"
+  fullName: SemanticVersioning.Version.TryParse
+  nameWithType: Version.TryParse
+- uid: SemanticVersioning.Version.op_Equality(SemanticVersioning.Version,SemanticVersioning.Version)
+  name: operator ==(Version, Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_Equality_SemanticVersioning_Version_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.op_Equality(SemanticVersioning.Version,SemanticVersioning.Version)
+  name.vb: =(Version, Version)
+  fullName: SemanticVersioning.Version.operator ==(SemanticVersioning.Version, SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.=(SemanticVersioning.Version, SemanticVersioning.Version)
+  nameWithType: Version.operator ==(Version, Version)
+  nameWithType.vb: Version.=(Version, Version)
+- uid: SemanticVersioning.Version.op_Equality*
+  name: operator ==
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_Equality_
+  commentId: Overload:SemanticVersioning.Version.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: SemanticVersioning.Version.operator ==
+  fullName.vb: SemanticVersioning.Version.=
+  nameWithType: Version.operator ==
+  nameWithType.vb: Version.=
+- uid: SemanticVersioning.Version.op_GreaterThan(SemanticVersioning.Version,SemanticVersioning.Version)
+  name: operator >(Version, Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_GreaterThan_SemanticVersioning_Version_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.op_GreaterThan(SemanticVersioning.Version,SemanticVersioning.Version)
+  name.vb: '>(Version, Version)'
+  fullName: SemanticVersioning.Version.operator >(SemanticVersioning.Version, SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.>(SemanticVersioning.Version, SemanticVersioning.Version)
+  nameWithType: Version.operator >(Version, Version)
+  nameWithType.vb: Version.>(Version, Version)
+- uid: SemanticVersioning.Version.op_GreaterThan*
+  name: operator >
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_GreaterThan_
+  commentId: Overload:SemanticVersioning.Version.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: SemanticVersioning.Version.operator >
+  fullName.vb: SemanticVersioning.Version.>
+  nameWithType: Version.operator >
+  nameWithType.vb: Version.>
+- uid: SemanticVersioning.Version.op_GreaterThanOrEqual(SemanticVersioning.Version,SemanticVersioning.Version)
+  name: operator >=(Version, Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_GreaterThanOrEqual_SemanticVersioning_Version_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.op_GreaterThanOrEqual(SemanticVersioning.Version,SemanticVersioning.Version)
+  name.vb: '>=(Version, Version)'
+  fullName: SemanticVersioning.Version.operator >=(SemanticVersioning.Version, SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.>=(SemanticVersioning.Version, SemanticVersioning.Version)
+  nameWithType: Version.operator >=(Version, Version)
+  nameWithType.vb: Version.>=(Version, Version)
+- uid: SemanticVersioning.Version.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_GreaterThanOrEqual_
+  commentId: Overload:SemanticVersioning.Version.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: SemanticVersioning.Version.operator >=
+  fullName.vb: SemanticVersioning.Version.>=
+  nameWithType: Version.operator >=
+  nameWithType.vb: Version.>=
+- uid: SemanticVersioning.Version.op_Inequality(SemanticVersioning.Version,SemanticVersioning.Version)
+  name: operator !=(Version, Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_Inequality_SemanticVersioning_Version_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.op_Inequality(SemanticVersioning.Version,SemanticVersioning.Version)
+  name.vb: <>(Version, Version)
+  fullName: SemanticVersioning.Version.operator !=(SemanticVersioning.Version, SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.<>(SemanticVersioning.Version, SemanticVersioning.Version)
+  nameWithType: Version.operator !=(Version, Version)
+  nameWithType.vb: Version.<>(Version, Version)
+- uid: SemanticVersioning.Version.op_Inequality*
+  name: operator !=
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_Inequality_
+  commentId: Overload:SemanticVersioning.Version.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: SemanticVersioning.Version.operator !=
+  fullName.vb: SemanticVersioning.Version.<>
+  nameWithType: Version.operator !=
+  nameWithType.vb: Version.<>
+- uid: SemanticVersioning.Version.op_LessThan(SemanticVersioning.Version,SemanticVersioning.Version)
+  name: operator <(Version, Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_LessThan_SemanticVersioning_Version_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.op_LessThan(SemanticVersioning.Version,SemanticVersioning.Version)
+  name.vb: <(Version, Version)
+  fullName: SemanticVersioning.Version.operator <(SemanticVersioning.Version, SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.<(SemanticVersioning.Version, SemanticVersioning.Version)
+  nameWithType: Version.operator <(Version, Version)
+  nameWithType.vb: Version.<(Version, Version)
+- uid: SemanticVersioning.Version.op_LessThan*
+  name: operator <
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_LessThan_
+  commentId: Overload:SemanticVersioning.Version.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: SemanticVersioning.Version.operator <
+  fullName.vb: SemanticVersioning.Version.<
+  nameWithType: Version.operator <
+  nameWithType.vb: Version.<
+- uid: SemanticVersioning.Version.op_LessThanOrEqual(SemanticVersioning.Version,SemanticVersioning.Version)
+  name: operator <=(Version, Version)
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_LessThanOrEqual_SemanticVersioning_Version_SemanticVersioning_Version_
+  commentId: M:SemanticVersioning.Version.op_LessThanOrEqual(SemanticVersioning.Version,SemanticVersioning.Version)
+  name.vb: <=(Version, Version)
+  fullName: SemanticVersioning.Version.operator <=(SemanticVersioning.Version, SemanticVersioning.Version)
+  fullName.vb: SemanticVersioning.Version.<=(SemanticVersioning.Version, SemanticVersioning.Version)
+  nameWithType: Version.operator <=(Version, Version)
+  nameWithType.vb: Version.<=(Version, Version)
+- uid: SemanticVersioning.Version.op_LessThanOrEqual*
+  name: operator <=
+  href: api/SemanticVersioning.Version.html#SemanticVersioning_Version_op_LessThanOrEqual_
+  commentId: Overload:SemanticVersioning.Version.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: SemanticVersioning.Version.operator <=
+  fullName.vb: SemanticVersioning.Version.<=
+  nameWithType: Version.operator <=
+  nameWithType.vb: Version.<=

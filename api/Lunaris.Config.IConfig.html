@@ -151,6 +151,12 @@ Interface IConfig
   <pre><code class="lang-csharp">Config.OnAnyChanged += (key, val) =&gt; { };</code></pre>
 
 
+  <h4 class="section" id="Lunaris_Config_IConfig_OnAnyChanged_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>Using the low-level API is not recommended. Use <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a> or <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__">Register&lt;T&gt;(ref T)</a> instead.</p>
+</div>
+</div>
 
 
 
@@ -186,6 +192,12 @@ Interface IConfig
   <pre><code class="lang-csharp">Config.SaveAsJson = true;</code></pre>
 
 
+  <h4 class="section" id="Lunaris_Config_IConfig_SaveAsJson_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>JSON is not fully readable and only ment for debugging.</p>
+</div>
+</div>
 
 
 
@@ -262,6 +274,12 @@ Interface IConfig
   <pre><code class="lang-csharp">Config.OnChanged("Key", (val) =&gt; { });</code></pre>
 
 
+  <h4 class="section" id="Lunaris_Config_IConfig_OnChanged_System_String_System_Action_System_Object___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>Using the low-level API is not recommended. Use <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a> or <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__">Register&lt;T&gt;(ref T)</a> instead.</p>
+</div>
+</div>
 
 
 
@@ -310,6 +328,12 @@ Interface IConfig
 var val = Config.Read("Key", 1.0f);</code></pre>
 
 
+  <h4 class="section" id="Lunaris_Config_IConfig_Read__1_System_String___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>Using the low-level API is not recommended. Use <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a> or <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__">Register&lt;T&gt;(ref T)</a> instead.</p>
+</div>
+</div>
 
 
 
@@ -322,7 +346,7 @@ var val = Config.Read("Key", 1.0f);</code></pre>
   </h3>
 
   <div class="markdown level1 summary"><p>Register a typed config class and get back a handle.
-The loader will introspect T to build a settings UI automatically.</p>
+Lunaris will build the settings UI automatically.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -349,6 +373,54 @@ The loader will introspect T to build a settings UI automatically.</p>
 
   <h4 class="section" id="Lunaris_Config_IConfig_Register__1_examples">Examples</h4>
   <pre><code class="lang-csharp">var config = Config.Register&lt;MySettings&gt;();</code></pre>
+
+
+
+
+
+
+  <a id="Lunaris_Config_IConfig_Register_" data-uid="Lunaris.Config.IConfig.Register*"></a>
+
+  <h3 id="Lunaris_Config_IConfig_Register__1___0__" data-uid="Lunaris.Config.IConfig.Register``1(``0@)">
+  Register&lt;T&gt;(ref T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register a typed config class and get back a handle.
+Also assigns the loaded config to <code class="paramref">instance</code>.
+Lunaris will build the settings UI automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IConfigHandle&lt;T&gt; Register&lt;T&gt;(ref T instance) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lunaris.Config.IConfigHandle-1.html">IConfigHandle</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Lunaris_Config_IConfig_Register__1___0___examples">Examples</h4>
+  <pre><code class="lang-csharp">var config = Config.Register(ref instance);
+var config = Config.Register&lt;MySettings&gt;(ref instance);</code></pre>
 
 
 
@@ -415,6 +487,137 @@ The loader will introspect T to build a settings UI automatically.</p>
 
 
 
+  <a id="Lunaris_Config_IConfig_SetDesc_" data-uid="Lunaris.Config.IConfig.SetDesc*"></a>
+
+  <h3 id="Lunaris_Config_IConfig_SetDesc_System_String_System_String_" data-uid="Lunaris.Config.IConfig.SetDesc(System.String,System.String)">
+  SetDesc(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set description for key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetDesc(string key, string desc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>desc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Lunaris_Config_IConfig_SetDesc_System_String_System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">Config.SetDesc("Key", "This value changes how...");</code></pre>
+
+
+  <h4 class="section" id="Lunaris_Config_IConfig_SetDesc_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>Using the low-level API is not recommended. Use <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a> or <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__">Register&lt;T&gt;(ref T)</a> instead.</p>
+</div>
+</div>
+
+
+
+
+  <a id="Lunaris_Config_IConfig_SetRange_" data-uid="Lunaris.Config.IConfig.SetRange*"></a>
+
+  <h3 id="Lunaris_Config_IConfig_SetRange_System_String_System_Single_System_Single_" data-uid="Lunaris.Config.IConfig.SetRange(System.String,System.Single,System.Single)">
+  SetRange(string, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set range for key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetRange(string key, float min, float max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Lunaris_Config_IConfig_SetRange_System_String_System_Single_System_Single__examples">Examples</h4>
+  <pre><code class="lang-csharp">Config.SetRange("Key", 0f, 10f);</code></pre>
+
+
+  <h4 class="section" id="Lunaris_Config_IConfig_SetRange_System_String_System_Single_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>Using the low-level API is not recommended. Use <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a> or <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__">Register&lt;T&gt;(ref T)</a> instead.</p>
+</div>
+</div>
+
+
+
+
+  <a id="Lunaris_Config_IConfig_SetSection_" data-uid="Lunaris.Config.IConfig.SetSection*"></a>
+
+  <h3 id="Lunaris_Config_IConfig_SetSection_System_String_System_String_" data-uid="Lunaris.Config.IConfig.SetSection(System.String,System.String)">
+  SetSection(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set section for key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetSection(string key, string section)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>section</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Lunaris_Config_IConfig_SetSection_System_String_System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">Config.SetSection("Key", "SectionName");</code></pre>
+
+
+  <h4 class="section" id="Lunaris_Config_IConfig_SetSection_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>Using the low-level API is not recommended. Use <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a> or <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__">Register&lt;T&gt;(ref T)</a> instead.</p>
+</div>
+</div>
+
+
+
+
   <a id="Lunaris_Config_IConfig_Write_" data-uid="Lunaris.Config.IConfig.Write*"></a>
 
   <h3 id="Lunaris_Config_IConfig_Write__1_System_String___0_" data-uid="Lunaris.Config.IConfig.Write``1(System.String,``0)">
@@ -453,6 +656,12 @@ The loader will introspect T to build a settings UI automatically.</p>
   <pre><code class="lang-csharp">Config.Write("Key", 2.0f);</code></pre>
 
 
+  <h4 class="section" id="Lunaris_Config_IConfig_Write__1_System_String___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><div class="WARNING">
+<h5>Warning</h5>
+<p>Using the low-level API is not recommended. Use <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a> or <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1___0__">Register&lt;T&gt;(ref T)</a> instead.</p>
+</div>
+</div>
 
 
 

@@ -59,6 +59,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lunaris.Config.ConfigDescriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunaris.Config.ConfigDescriptionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunaris.Config.ConfigDescriptionAttribute",
+      "Summary": "<p sourcefile=\"api/Lunaris.Config.ConfigDescriptionAttribute.yml\" sourcestartlinenumber=\"1\">Description shown in the config UI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lunaris.Config.ConfigHiddenAttribute.yml",
       "output": {
         ".html": {
@@ -909,6 +923,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Lunaris",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SemanticVersioning.Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SemanticVersioning.Version.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SemanticVersioning.Version",
+      "Summary": "<p sourcefile=\"api/SemanticVersioning.Version.yml\" sourcestartlinenumber=\"1\">A semantic version.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SemanticVersioning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SemanticVersioning.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SemanticVersioning",
       "Summary": null
     },
     {
