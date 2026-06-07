@@ -9,6 +9,11 @@
     "title": "Introduction | Lunaris",
     "summary": "Introduction"
   },
+  "api/Lunaris.Config.ConfigAliasAttribute.html": {
+    "href": "api/Lunaris.Config.ConfigAliasAttribute.html",
+    "title": "Class ConfigAliasAttribute | Lunaris",
+    "summary": "Class ConfigAliasAttribute Namespace Lunaris.Config Assembly Lunaris.dll Declares one or more legacy key names that should be considered aliases for this member. [AttributeUsage(AttributeTargets.Property|AttributeTargets.Field, AllowMultiple = true)] public sealed class ConfigAliasAttribute : Attribute, _Attribute Inheritance object Attribute ConfigAliasAttribute Implements _Attribute Constructors ConfigAliasAttribute(string) Declares one or more legacy key names that should be considered aliases for this member. public ConfigAliasAttribute(string alias) Parameters alias string Properties Alias public string Alias { get; } Property Value string"
+  },
   "api/Lunaris.Config.ConfigAttribute.html": {
     "href": "api/Lunaris.Config.ConfigAttribute.html",
     "title": "Class ConfigAttribute | Lunaris",
@@ -67,7 +72,7 @@
   "api/Lunaris.Config.html": {
     "href": "api/Lunaris.Config.html",
     "title": "Namespace Lunaris.Config | Lunaris",
-    "summary": "Namespace Lunaris.Config Classes ConfigAttribute Combines other Attributes for ease of use. ConfigDescriptionAttribute Description shown in the config UI. ConfigHiddenAttribute Marks a property as hidden in the config UI. ConfigLabelAttribute Display string shown in the config UI. ConfigRangeAttribute Clamps a numeric property to [Min, Max]. ConfigSectionAttribute Groups properties in the config UI. KeybindAttribute Interfaces IConfig IConfigHandle<T> Handle returned by Register<T>(). IKeybind Config keybind entry."
+    "summary": "Namespace Lunaris.Config Classes ConfigAliasAttribute Declares one or more legacy key names that should be considered aliases for this member. ConfigAttribute Combines other Attributes for ease of use. ConfigDescriptionAttribute Description shown in the config UI. ConfigHiddenAttribute Marks a property as hidden in the config UI. ConfigLabelAttribute Display string shown in the config UI. ConfigRangeAttribute Clamps a numeric property to [Min, Max]. ConfigSectionAttribute Groups properties in the config UI. KeybindAttribute Interfaces IConfig IConfigHandle<T> Handle returned by Register<T>(). IKeybind Config keybind entry."
   },
   "api/Lunaris.ConfigHiddenAttribute.html": {
     "href": "api/Lunaris.ConfigHiddenAttribute.html",

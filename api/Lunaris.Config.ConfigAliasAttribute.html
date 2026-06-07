@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace Lunaris.Config | Lunaris </title>
+      <title>Class ConfigAliasAttribute | Lunaris </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace Lunaris.Config | Lunaris ">
+      <meta name="title" content="Class ConfigAliasAttribute | Lunaris ">
       
-      
+      <meta name="description" content="Declares one or more legacy key names that should be considered aliases for this member.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -84,72 +84,124 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Lunaris.Config">
+        <article data-uid="Lunaris.Config.ConfigAliasAttribute">
 
-  <h1 id="Lunaris_Config" data-uid="Lunaris.Config" class="text-break">Namespace Lunaris.Config</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.ConfigAliasAttribute.html">ConfigAliasAttribute</a></dt>
-      <dd><p>Declares one or more legacy key names that should be considered aliases for this member.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.ConfigAttribute.html">ConfigAttribute</a></dt>
-      <dd><p>Combines other Attributes for ease of use.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.ConfigDescriptionAttribute.html">ConfigDescriptionAttribute</a></dt>
-      <dd><p>Description shown in the config UI.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.ConfigHiddenAttribute.html">ConfigHiddenAttribute</a></dt>
-      <dd><p>Marks a property as hidden in the config UI.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.ConfigLabelAttribute.html">ConfigLabelAttribute</a></dt>
-      <dd><p>Display string shown in the config UI.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.ConfigRangeAttribute.html">ConfigRangeAttribute</a></dt>
-      <dd><p>Clamps a numeric property to [Min, Max].</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.ConfigSectionAttribute.html">ConfigSectionAttribute</a></dt>
-      <dd><p>Groups properties in the config UI.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.KeybindAttribute.html">KeybindAttribute</a></dt>
-      <dd></dd>
-    </dl>
-    <h3 id="interfaces">
-Interfaces
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.IConfig.html">IConfig</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.IConfigHandle-1.html">IConfigHandle&lt;T&gt;</a></dt>
-      <dd><p>Handle returned by <a class="xref" href="Lunaris.Config.IConfig.html#Lunaris_Config_IConfig_Register__1">Register&lt;T&gt;()</a>.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Lunaris.Config.IKeybind.html">IKeybind</a></dt>
-      <dd><p>Config keybind entry.</p>
-</dd>
-    </dl>
+
+  <h1 id="Lunaris_Config_ConfigAliasAttribute" data-uid="Lunaris.Config.ConfigAliasAttribute" class="text-break">
+Class ConfigAliasAttribute  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lunaris.html">Lunaris</a>.<a class="xref" href="Lunaris.Config.html">Config</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Lunaris.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Declares one or more legacy key names that should be considered aliases for this member.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Property|AttributeTargets.Field, AllowMultiple = true)]
+public sealed class ConfigAliasAttribute : Attribute, _Attribute</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+      <div><span class="xref">ConfigAliasAttribute</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._attribute">_Attribute</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lunaris_Config_ConfigAliasAttribute__ctor_" data-uid="Lunaris.Config.ConfigAliasAttribute.#ctor*"></a>
+
+  <h3 id="Lunaris_Config_ConfigAliasAttribute__ctor_System_String_" data-uid="Lunaris.Config.ConfigAliasAttribute.#ctor(System.String)">
+  ConfigAliasAttribute(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Declares one or more legacy key names that should be considered aliases for this member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigAliasAttribute(string alias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Lunaris_Config_ConfigAliasAttribute_Alias_" data-uid="Lunaris.Config.ConfigAliasAttribute.Alias*"></a>
+
+  <h3 id="Lunaris_Config_ConfigAliasAttribute_Alias" data-uid="Lunaris.Config.ConfigAliasAttribute.Alias">
+  Alias
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Alias { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 </article>

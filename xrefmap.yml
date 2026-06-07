@@ -13,6 +13,44 @@ references:
   commentId: N:Lunaris.Config
   fullName: Lunaris.Config
   nameWithType: Lunaris.Config
+- uid: Lunaris.Config.ConfigAliasAttribute
+  name: ConfigAliasAttribute
+  href: api/Lunaris.Config.ConfigAliasAttribute.html
+  commentId: T:Lunaris.Config.ConfigAliasAttribute
+  fullName: Lunaris.Config.ConfigAliasAttribute
+  nameWithType: ConfigAliasAttribute
+- uid: Lunaris.Config.ConfigAliasAttribute.#ctor(System.String)
+  name: ConfigAliasAttribute(string)
+  href: api/Lunaris.Config.ConfigAliasAttribute.html#Lunaris_Config_ConfigAliasAttribute__ctor_System_String_
+  commentId: M:Lunaris.Config.ConfigAliasAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Lunaris.Config.ConfigAliasAttribute.ConfigAliasAttribute(string)
+  fullName.vb: Lunaris.Config.ConfigAliasAttribute.New(String)
+  nameWithType: ConfigAliasAttribute.ConfigAliasAttribute(string)
+  nameWithType.vb: ConfigAliasAttribute.New(String)
+- uid: Lunaris.Config.ConfigAliasAttribute.#ctor*
+  name: ConfigAliasAttribute
+  href: api/Lunaris.Config.ConfigAliasAttribute.html#Lunaris_Config_ConfigAliasAttribute__ctor_
+  commentId: Overload:Lunaris.Config.ConfigAliasAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Lunaris.Config.ConfigAliasAttribute.ConfigAliasAttribute
+  fullName.vb: Lunaris.Config.ConfigAliasAttribute.New
+  nameWithType: ConfigAliasAttribute.ConfigAliasAttribute
+  nameWithType.vb: ConfigAliasAttribute.New
+- uid: Lunaris.Config.ConfigAliasAttribute.Alias
+  name: Alias
+  href: api/Lunaris.Config.ConfigAliasAttribute.html#Lunaris_Config_ConfigAliasAttribute_Alias
+  commentId: P:Lunaris.Config.ConfigAliasAttribute.Alias
+  fullName: Lunaris.Config.ConfigAliasAttribute.Alias
+  nameWithType: ConfigAliasAttribute.Alias
+- uid: Lunaris.Config.ConfigAliasAttribute.Alias*
+  name: Alias
+  href: api/Lunaris.Config.ConfigAliasAttribute.html#Lunaris_Config_ConfigAliasAttribute_Alias_
+  commentId: Overload:Lunaris.Config.ConfigAliasAttribute.Alias
+  isSpec: "True"
+  fullName: Lunaris.Config.ConfigAliasAttribute.Alias
+  nameWithType: ConfigAliasAttribute.Alias
 - uid: Lunaris.Config.ConfigAttribute
   name: ConfigAttribute
   href: api/Lunaris.Config.ConfigAttribute.html
